@@ -35,3 +35,17 @@ function selectButton(item){
     
     }
 }
+                                             
+                                             
+function  mov(){
+ setInterval(()=>{
+  window.onmousemove = () => {
+    var x = window.event.clientX;
+    var y = window.event.clientY;
+   document.getElementById('fio').style.left = x + "px";
+   document.getElementById('fio').style.top = y + "px";
+   
+   
+}
+ },10);
+}
